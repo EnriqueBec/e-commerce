@@ -1,0 +1,189 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e6f0ff, #ffffff);
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.payment-container {
+  display: flex;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+/* FORM LEFT */
+.form-left {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.form-left h2 {
+  color: #003399;
+  margin-bottom: 20px;
+}
+
+.form-left h2 span {
+  color: #666;
+}
+
+.timer {
+  font-size: 1.5em;
+  background-color: #002266;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.expiry {
+  display: flex;
+  align-items: center;
+}
+
+.expiry input {
+  width: 50px;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.expiry span {
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #0066ff;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004ecc;
+}
+
+/* SUMMARY RIGHT */
+.summary-right {
+  width: 300px;
+  background: #f5f7fa;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.card-preview {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.card-preview p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.details p {
+  margin: 10px 0;
+  font-size: 0.95em;
+}
+
+.total {
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.total span {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* ----- MÓVIL ----- */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .payment-container {
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .form-left {
+    margin: 0 0 30px 0;
+  }
+
+  .summary-right {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .expiry {
+    justify-content: flex-start;
+  }
+
+  .expiry input {
+    width: 40px;
+    padding: 8px;
+    font-size: 0.9em;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  .timer {
+    font-size: 1.2em;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+}
